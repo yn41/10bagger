@@ -5,37 +5,37 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/10bagger/',
 		redirect: '/sectorRanking',
   },
 	{
-		path: '/sectorRanking',
+		path: '/10bagger/sectorRanking',
 		name: 'SectorRanking',
 		component: () => import(/* webpackChunkName: "sector" */ '@/views/ranking/Sector.vue')
 	},
 	{
-		path: '/themeRanking',
+		path: '/10bagger/themeRanking',
 		name: 'ThemeRanking',
 		component: () => import(/* webpackChunkName: "home" */ '@/views/ranking/Theme.vue')
 	},
 	{
-		path: '/keywordMining',
+		path: '/10bagger/keywordMining',
 		name: 'Keyword',
 		component: () => import(/* webpackChunkName: "home" */ '@/views/mining/Keyword.vue')
 	},
 	{
-		path: '/trendMining',
+		path: '/10bagger/trendMining',
 		name: 'Trend',
 		component: () => import(/* webpackChunkName: "home" */ '@/views/mining/Trend.vue')
 	},
 	{
-		path: '/ready',
+		path: '/10bagger/ready',
 		name: 'Ready',
 		component: () => import(/* webpackChunkName: "etc" */ '@/views/etc/Ready.vue')
 	},
 	{
 		path: "*",
-		redirect: '/sectorRanking',
+		redirect: '/10bagger/sectorRanking',
 	},
 ]
 
