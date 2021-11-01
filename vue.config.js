@@ -10,5 +10,8 @@ module.exports = {
     sourceMap: true,
   },
 
-  outputDir: 'docs'
+  outputDir: 'docs',
+	publicPath: process.env.NODE_ENV === 'production'
+    ? '/10bagger/'
+    : '/'
 }
